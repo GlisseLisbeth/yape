@@ -23,6 +23,11 @@ let router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
+  res.sendFile('/');
+});
+
+router.post('/', (req, res) =>{
+  
 });
 
 app.use('/api',apiUsers(router,db));

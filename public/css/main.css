@@ -1,0 +1,37 @@
+body,h1,h2,h3,h4,h5,h6,span,input,label,small{
+  font-family: 'Roboto' !important;
+}
+.content-img {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-img  .slider-img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.content-img  .slider-img img {
+  display: none;
+  width: 550px;
+  height: 550px;
+}
+.content-img  .slider-img img.active {
+  display: inline-block;
+}
+.content-img .slider-circle > ul li.active {
+    background: #cc0033;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.4);
+}
+.content-img .slider-circle > ul li {
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    margin: 0 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}

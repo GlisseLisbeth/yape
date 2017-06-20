@@ -1,7 +1,7 @@
 const Circle = () =>{
   const container =$('<section class="content-circle container"></section>');
   const row = $('<div class="row"></div>');
-  const col = $('<div class="col s4 offset-s4"></div>');
+  const col = $('<div class="col s4 offset-s4 m3 offset-m1 l1 offset-l1"></div>');
   
   const circleGroup = $('<div class="slider-circle"></div>');
   const circle = $('<ul></ul>');

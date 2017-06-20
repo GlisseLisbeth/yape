@@ -4,7 +4,7 @@
 const Image = () => {
   const container =$('<section class="content-img container"></section>');
   const row = $('<div class="row"></div>');
-  const col = $('<div class="col s12"></div>');
+  const col = $('<div class="col s12  m6 l3"></div>');
   
   const img = $('<div class="slider-img"></div>');
   const img1 = $('<img src="img/icons/icon-people.png" class="img-1 active">')

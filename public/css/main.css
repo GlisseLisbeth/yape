@@ -20,12 +20,12 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 .content-img  .slider-img img.active {
   display: inline-block;
 }
-.content-img .slider-circle > ul li.active {
+.content-circle .slider-circle > ul li.active {
     background: #cc0033;
     -webkit-transform: scale(1.5);
     transform: scale(1.4);
 }
-.content-img .slider-circle > ul li {
+.content-circle .slider-circle > ul li {
     display: inline-block;
     padding: 10px;
     background: #fff;

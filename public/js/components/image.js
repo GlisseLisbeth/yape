@@ -1,25 +1,38 @@
-'use strict'
-  
-  
-const Image = () => {
-  const container =$('<section class="content-img container"></section>');
-  const row = $('<div class="row"></div>');
-  const col = $('<div class="col s12  m6 l3"></div>');
-  
-  const img = $('<div class="slider-img"></div>');
-  const img1 = $('<img src="img/icons/icon-people.png" class="img-1 active">')
-  const img2 = $('<img src="img/icons/happy-person.png" class="img-2">')
-  const img3 = $('<img src="img/icons/party.png" class="img-3">')
-  
-  img.append(img1);
-  img.append(img2);
-  img.append(img3);
-  col.append(img);
-  
+'use strict';
+
+const Imgs = () => {
+  let param = content.dataContent;
+  let container =$('<section class="content-img container"></section>');
+  let row = $('<div class="row"></div>');
+  let col = $('<div class="col s12"></div>');
+  let imgs = $('<div class="img"></div>');
+  let imag = $('<img src="" alt="" class="">')
+
+    imgs.attr("class","slider-img");
+    param.imgpng.forEach((image, position) =>{
+      imag= $('<img src="'+image+'" alt="'+param.title[position]+'" class="img-'+param.id+' '+param.state[position]+'">')
+      imgs.append(imag);
+    });
+
+
+  col.append(imgs);
   row.append(col);
   container.append(row);
-  
+
   return container;
 }
-  
-  
+const Img = () => {
+  let param = content.dataContent;
+  let container =$('<section class="content-img container"></section>');
+  let row = $('<div class="row"></div>');
+  let col = $('<div class="col s12"></div>');
+  let imgs = $('<div class="img"></div>');
+  let imag= $('<img src="'+param.imgpng+'" alt="'+param.title+'">')
+  imgs.append(imag);
+
+  col.append(imgs);
+  row.append(col);
+  container.append(row);
+
+  return container;
+}

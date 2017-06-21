@@ -1,8 +1,10 @@
 body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   font-family: 'Roboto' !important;
 }
-.content-img {
-  height: 70vh;
+.wrapper{
+   margin-top: 10%;
+}
+.content-img, .content-text, .content-circle, .content-form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +19,13 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   width: 550px;
   height: 550px;
 }
-.content-img  .slider-img img.active {
+.content-text h1, .content-text h2 {
+  display: none;
+}
+.content-text h1.active, .content-text h2.active, .content-img  .slider-img img.active {
   display: inline-block;
 }
+
 .content-circle .slider-circle > ul li.active {
     background: #cc0033;
     -webkit-transform: scale(1.5);

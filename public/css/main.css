@@ -1,10 +1,39 @@
 body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   font-family: 'Roboto' !important;
 }
+h1{
+  font-weight: 600 !important;
+}
+h6 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+h2{
+  color: #8f8f8f !important;
+}
+input[type="tel"], input[type="text"],
+input[type="number"],
+strong{
+  color: #49233b;
+}
+button{
+  margin-top: 60px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100px;
+}
+p, small {
+  color: #8f8f8f;
+}
 .wrapper{
    margin-top: 10%;
 }
-.content-img, .content-text, .content-circle, .content-form {
+.container{
+  width: 100% !important;
+  height: 100% !important;
+}
+.content-img, .content-text, .content-circle, .content-form-index,  .content-form-registerNumber, .content-form-resendCode, .content-form-createUser, .content-form-success {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,4 +69,8 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
     cursor: pointer;
     -webkit-transition: 0.1s;
     transition: 0.1s;
+}
+
+.content-form-registerNumber #filled-in-box:checked{
+  background-color:#00c3a3;
 }

@@ -31,6 +31,7 @@ let Texto = () =>{
   let texts = $('<div class="text"></div>')
   let titles = $('<h1  class="center-align">'+param.title+'</h1>');
   let descriptions = $('<h2 class="center-align"><small class="grey-text text-darken-1">'+param.description+'</small></h2>');
+  if(param.page="resendCode")
   titles.css("display","block");
   descriptions.css("display","block");
   console.log(titles);

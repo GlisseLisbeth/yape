@@ -6,41 +6,52 @@
 	"description":["Paga a quien quieras, desde donde quieras, sin usar efectivo.","Elige a quién pagar desde tu lista de contacto.","La transferencia es inmediata y gratuita de una cuenta a otra."],
   "imgpng":["img/icons/icon-people.png","img/icons/happy-person.png","img/icons/group-people.png"],
   "state":["active", "", ""],
-	"button":"registrarse"
+	"btns":"registrarse"
 },
 {
 	"id":2,
 	"page":"registerNumber",
-	"url":"/registerNumber",
+	"url":"api//registerNumber",
 	"title":"Para comenzar validemos tu número",
   "description":"Recibirás un SMS con un código de validación",
   "imgpng":"img/icons/phone.png",
-  "button":"continuar"
+  "btns":"continuar"
 },
 {
 	"id":3,
 	"page":"resendCode",
-	"url":"/resendCode",
+	"url":"api/resendCode",
 	"title":"Ahora ingresa tu código",
   "description":"Envíamos un SMS el código de validación al número",
   "imgpng":"img/icons/message.png",
-  "button":""
+  "btns":""
 },
 {
 	"id":4,
 	"page":"createUser",
-	"url":"/createUser",
+	"url":"api/createUser",
 	"title":"Crea tu usuario Yape",
   "description":"Ingresa un nombre, email, y clave de usuario.",
   "imgpng":"img/icons/lockone.png",
-  "button":"crear cuenta"
+  "btns":"crear cuenta"
 },
 {
 	"id":5,
 	"page":"registerCard",
-	"url":"/registerCard",
+	"url":"api/registerCard",
 	"title":["Registra tu tarjeta débito BCP", "Ingrese la clave de su tarjeta"],
   "description":["Por ahora solo aceptamos cuentas de ahorros y/o corriente en soles.","Tarjeta"],
   "imgpng":"img/icons/bcp-logo.png",
   "button":["continuar","registrar"]
-}]
+},
+{
+	"id":6,
+	"page":"success",
+	"url":"",
+	"title":["Bien"],
+  "description":["Ahora puedes usar Yape"],
+  "imgpng":"img/icons/check.png",
+
+
+}
+]

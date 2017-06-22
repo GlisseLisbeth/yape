@@ -130,7 +130,7 @@ const Forms = (dataPage, update) =>{
 
     const message = $('<span class="center-align"><small>Cuida esta clave como oro, ya que es tu acceso a Yape.<small></span>');
     const buttonsRegisterUser = $('<button id="btnRegisterUser" type="submit" class="waves-effect btn-large yellow darken-1"></button>');
-
+    buttonsRegisterUser.text(param.btns);
     inputName.on('keyup', (e) =>{
       e.preventDefault();
       validateUser();
@@ -196,7 +196,7 @@ const Forms = (dataPage, update) =>{
 
     const buttonsRegiterCard = $('<button id="btnRegisterCard" type="submit" class="waves-effect btn-large yellow darken-1"></button>');
     $('#btnRegisterCard').removeClass('disabled');
-
+    buttonsRegiterCard.text(param.btns);
     buttonsRegiterCard.on('click', (e) =>{
         e.preventDefault();
         localStorage.setItem("userId",state.user.phone);

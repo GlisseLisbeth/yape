@@ -1,6 +1,8 @@
 'use strict';
+$( _ => {
 
 const Message=()=>{
+  const root = $("#root");
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
   const row=$('<div class="row conten">');
@@ -24,7 +26,5 @@ const Message=()=>{
   root.append(wrapper);
 }
 
-$( _ => {
-      const root = $("#root");
-      render(root);
+
 });

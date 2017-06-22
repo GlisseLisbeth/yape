@@ -42,16 +42,15 @@
 	"title":["Registra tu tarjeta débito BCP", "Ingrese la clave de su tarjeta"],
   "description":["Por ahora solo aceptamos cuentas de ahorros y/o corriente en soles.","Tarjeta"],
   "imgpng":"img/icons/bcp-logo.png",
-  "button":["continuar","registrar"]
+  "btns":["continuar","registrar"]
 },
 {
 	"id":6,
 	"page":"success",
 	"url":"",
-	"title":["Bien"],
-  "description":["Ahora puedes usar Yape"],
+	"title":"Bien",
+  "description":"Ahora puedes usar Yape",
   "imgpng":"img/icons/check.png",
-
-
+	"btns":""
 }
 ]

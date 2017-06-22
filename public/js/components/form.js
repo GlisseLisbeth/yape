@@ -272,10 +272,10 @@ const validateNumber = function(){
 }
 
 const validateUser = function(){
-  if($('#inputName').val().length < 3 && $('#inputEmail').val().length != 0 $$ $('#inputClave').val().length != 0 ){
-          $('#btnRegisterUser').removeClass('disabled');
-          $('#btnRegisterUser').attr("class","waves-effect btn-large yellow darken-1");
-  }
+  // if($('#inputName').val().length < 3 && $('#inputEmail').val().length != 0 $$ $('#inputClave').val().length != 0 ){
+  //         $('#btnRegisterUser').removeClass('disabled');
+  //         $('#btnRegisterUser').attr("class","waves-effect btn-large yellow darken-1");
+  // }
 }
 
 const validateCard = function(){
